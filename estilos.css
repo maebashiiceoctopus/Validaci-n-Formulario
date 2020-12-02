@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+background:url(https://i.ibb.co/VDnZrGG/astronomy-1867616-1280.jpg);
+font-family: 'Open Sans', sans-serif;
+font-size: 18px;
+}
+
+.contenedor{
+    width: 400px;
+    margin:60px auto;
+}
+
+.formulario .contenedor-inputs{
+    padding: 20px;
+    background: #FFFF;
+    border-radius: 6px 6px 0 0;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"]{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px 10px;
+    border:none;
+    border-bottom: 2px solid #CCC;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+.formulario input[type="text"]:focus,
+.formulario input[type="email"]:focus{
+
+border-bottom: 2px solid blueviolet;
+
+}
+
+.formulario input[type="radio"]{
+    display: none;
+}
+
+.formulario .sexo{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.formulario .sexo .hombre{
+border-radius: 3px 0 0 3px;
+
+}
+.formulario .sexo .mujer{
+    border-radius: 0 3px 3px 0;
+}
+
+.formulario .label-radio{
+    background-color: rgba(84, 32, 133,0.4);
+    color:#FFF;
+    padding: 10px;
+    text-align: center;
+    width: 49.5%;
+}
+
+.formulario input[type="radio"]:checked + .label-radio{
+    background-color: blueviolet;
+}
+.formulario .terminos{
+    text-align: center;
+    color: darkblue;
+}
+
+.formulario .terminos label{
+    margin-left: 10px;
+}
+
+.formulario .error{
+    display: none;
+    margin-top: 20px;
+    border-radius: 3px;
+    background-color: rgb(175, 17, 162);
+    padding: 15px 10px;
+    padding-left: 40px;
+}
+
+.formulario .btn{
+    width: 100%;
+    text-align: center;
+    background-color: rgb(76, 15, 133);
+    color: #FFFF;
+    border: none;
+    display: block;
+    padding:15px 10px;
+    cursor: pointer;
+    border-radius: 0 0 6px 6px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+.formulario .btn:hover{
+    background-color: rgb(41, 7, 73);
+}
