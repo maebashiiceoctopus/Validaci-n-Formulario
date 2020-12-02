@@ -1,4 +1,4 @@
-
+(function(){
 
 var formulario= document.getElementById('formulario'),
     nombre= formulario.nombre,
@@ -62,4 +62,4 @@ function validarCorreo(e){
 formulario.addEventListener('submit', validarFormulario);
 
 
-
+}())
